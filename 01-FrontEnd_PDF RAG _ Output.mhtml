@@ -1,0 +1,184 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:8000/
+Subject: PDF RAG | Ollama
+Date: Sat, 5 Sep 2026 12:32:03 +0530
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--quYqkXLvt6Hq2ysBi1cP72JVxlCLSKVt3TL9goqnOe----"
+
+
+------MultipartBoundary--quYqkXLvt6Hq2ysBi1cP72JVxlCLSKVt3TL9goqnOe----
+Content-Type: text/html
+Content-ID: <frame-083E61B6E3FABC6DA3CF6465A0820457@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:8000/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><meta name=3D"viewport" content=3D"width=3Ddevice-=
+width,initial-scale=3D1"><title>PDF RAG | Ollama</title><link rel=3D"styles=
+heet" href=3D"http://127.0.0.1:8000/static/style.css"></head><body><main><h=
+eader><div><p class=3D"eyebrow">LOCAL =E2=80=A2 PRIVATE =E2=80=A2 GROUNDED<=
+/p><h1>Ask your PDFs</h1><p class=3D"sub">Retrieval-augmented answers power=
+ed by Ollama and llama3.2.</p></div><div id=3D"status" class=3D"badge good"=
+>Ollama online =C2=B7 3 chunks</div></header><section class=3D"layout"><asi=
+de><h2>Library</h2><form id=3D"upload"><input id=3D"file" type=3D"file" acc=
+ept=3D"application/pdf" required=3D""><button>Upload &amp; index</button></=
+form><div class=3D"controls"><button id=3D"reindex" class=3D"secondary">Rei=
+ndex PDFs</button><button id=3D"clear" class=3D"danger">Clear index</button=
+></div><div id=3D"docs"><div class=3D"doc">evaluation-playbook.pdf<br><span=
+>1 chunks indexed</span></div><div class=3D"doc">ollama-local-ai.pdf<br><sp=
+an>1 chunks indexed</span></div><div class=3D"doc">rag-fundamentals.pdf<br>=
+<span>1 chunks indexed</span></div></div><p class=3D"hint">Included: three =
+example PDFs. Your files stay on this computer.</p></aside><section class=
+=3D"chat"><div id=3D"messages"><article class=3D"welcome"><h2>Ready to sear=
+ch</h2><p>Ask about RAG, local Ollama models, or evaluation. Every answer i=
+ncludes retrieved evidence.</p></article><article class=3D"msg"><div class=
+=3D"q">What makes RAG trustworthy</div><div class=3D"answer">Based on the p=
+rovided excerpts, evidence is missing to directly answer the question of wh=
+at makes RAG trustworthy. The excerpts provide information on how RAG works=
+, its pipeline, and evaluation criteria, but do not discuss trustworthiness=
+ explicitly.</div><div class=3D"sources"><div class=3D"source"><b>[1] rag-f=
+undamentals.pdf =C2=B7 p. 1</b><span class=3D"score">0.432</span><br>RAG Fu=
+ndamentals Retrieval-Augmented Generation combines search with a language m=
+odel. Instead of relying only on a model's parameters, it retrieves relevan=
+t passages at question time and provides them as context. A typical pipelin=
+e extracts text, splits it into overlapping chunks, converts chunks into em=
+beddings, stores vectors with metadata, retrieves the closest chunks, and a=
+sks a model to answer only from that evidence. Strong RAG answers show thei=
+r sources. Page-aware citations help a reader verify a claim and reduce the=
+ chance that a plausible-looking answer is unsupported.</div><div class=3D"=
+source"><b>[2] evaluation-playbook.pdf =C2=B7 p. 1</b><span class=3D"score"=
+>0.42</span><br>RAG Evaluation Playbook Evaluate retrieval separately from =
+generation. For retrieval, check whether the evidence needed to answer a qu=
+estion appears in the top results. For generation, judge accuracy, complete=
+ness, citation quality, and whether the answer says when evidence is missin=
+g. Chunk size is a trade-off. Very small chunks can lose surrounding meanin=
+g; very large chunks add distracting context. Overlap helps preserve statem=
+ents that span chunk boundaries. A production system benefits from observab=
+ility: record the retrieved chunks, similarity scores, model names, latency=
+, and user feedback. These traces make failures diagnosable and improvement=
+s measurable.</div><div class=3D"source"><b>[3] ollama-local-ai.pdf =C2=B7 =
+p. 1</b><span class=3D"score">0.224</span><br>Running Local AI with Ollama =
+Ollama runs language models locally through a simple HTTP API. A chat model=
+ can generate answers while an embedding model turns text into vectors for =
+semantic search. For this application, llama3.2 produces grounded answers a=
+nd nomic-embed-text creates embeddings. Both models must be pulled once, th=
+en remain available locally. Local execution keeps document contents on the=
+ computer. Applications should still handle untrusted PDF text carefully an=
+d instruct the model to treat retrieved content as reference material, not =
+as commands.</div></div></article></div><form id=3D"ask"><textarea id=3D"qu=
+estion" placeholder=3D"What makes a RAG answer trustworthy?" required=3D"">=
+</textarea><div class=3D"askbar"><label>Sources <select id=3D"topk"><option=
+>3</option><option selected=3D"">4</option><option>5</option><option>6</opt=
+ion></select></label><button>Ask PDF library <span>=E2=86=97</span></button=
+></div></form></section></section></main>
+<span id=3D"PING_CONTENT_PUSH_NOTIFICATION" style=3D"display: none;"></span=
+></body></html>
+------MultipartBoundary--quYqkXLvt6Hq2ysBi1cP72JVxlCLSKVt3TL9goqnOe----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:8000/static/style.css
+
+@charset "utf-8";
+
+:root { --ink: #152218; --muted: #647067; --paper: #f7f6ef; --card: #fffefa=
+; --line: #d9ddd3; --lime: #c9ed5c; --green: #1d5633; --red: #9e3b32; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0px; background: var(--paper); color: var(--ink); font-famil=
+y: Inter, ui-sans-serif, system-ui, sans-serif; }
+
+main { max-width: 1200px; margin: auto; padding: 42px 24px; }
+
+header { display: flex; justify-content: space-between; align-items: start;=
+ margin-bottom: 32px; }
+
+.eyebrow { letter-spacing: 0.12em; font-size: 11px; font-weight: 800; color=
+: var(--green); margin: 0px 0px 8px; }
+
+h1 { font-size: 42px; letter-spacing: -0.05em; margin: 0px; }
+
+.sub { color: var(--muted); margin: 8px 0px; }
+
+.badge { padding: 8px 12px; border: 1px solid var(--line); border-radius: 9=
+9px; font-size: 13px; background: rgb(255, 255, 255); }
+
+.badge.good { background: rgb(239, 249, 211); border-color: rgb(185, 223, 7=
+1); }
+
+.badge.bad { background: rgb(255, 240, 234); color: var(--red); }
+
+.layout { display: grid; grid-template-columns: 310px 1fr; gap: 22px; }
+
+aside, .chat { background: var(--card); border: 1px solid var(--line); bord=
+er-radius: 18px; }
+
+aside { padding: 20px; }
+
+h2 { margin: 0px 0px 14px; font-size: 17px; }
+
+input[type=3D"file"] { max-width: 100%; font-size: 12px; margin-bottom: 10p=
+x; }
+
+button { border: 0px; border-radius: 9px; background: var(--green); color: =
+rgb(255, 255, 255); padding: 10px 12px; font-weight: 700; cursor: pointer; =
+}
+
+.controls { display: flex; gap: 8px; margin: 14px 0px; }
+
+.secondary { background: rgb(232, 237, 226); color: var(--ink); }
+
+.danger { background: rgb(255, 240, 234); color: var(--red); }
+
+.doc { padding: 11px 0px; border-bottom: 1px solid var(--line); font-size: =
+13px; }
+
+.doc span { color: var(--muted); font-size: 12px; }
+
+.hint { font-size: 12px; line-height: 1.5; color: var(--muted); margin-top:=
+ 20px; }
+
+.chat { min-height: 600px; display: flex; flex-direction: column; }
+
+#messages { padding: 26px; flex: 1 1 0%; }
+
+.welcome { max-width: 520px; padding: 20px; background: rgb(239, 247, 220);=
+ border-radius: 14px; }
+
+.welcome p { line-height: 1.5; color: rgb(67, 82, 68); }
+
+.msg { margin: 0px 0px 20px; max-width: 760px; }
+
+.q { font-weight: 750; margin-bottom: 8px; }
+
+.answer { line-height: 1.6; white-space: pre-wrap; }
+
+.sources { display: grid; gap: 8px; margin-top: 14px; }
+
+.source { background: rgb(244, 245, 240); border-left: 3px solid var(--lime=
+); padding: 10px; font-size: 12px; line-height: 1.45; }
+
+.score { float: right; color: var(--muted); }
+
+#ask { border-top: 1px solid var(--line); padding: 16px; }
+
+textarea { width: 100%; min-height: 80px; border: 1px solid var(--line); bo=
+rder-radius: 10px; padding: 12px; font: inherit; resize: vertical; }
+
+.askbar { display: flex; justify-content: space-between; align-items: cente=
+r; margin-top: 10px; }
+
+.askbar label { font-size: 12px; color: var(--muted); }
+
+select { border: 1px solid var(--line); border-radius: 5px; padding: 3px; }
+
+@media (max-width: 760px) {
+  header, .layout { display: block; }
+  header { margin-bottom: 20px; }
+  .badge { display: inline-block; margin-top: 16px; }
+  aside { margin-bottom: 16px; }
+  h1 { font-size: 34px; }
+}
+------MultipartBoundary--quYqkXLvt6Hq2ysBi1cP72JVxlCLSKVt3TL9goqnOe------
